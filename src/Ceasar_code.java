@@ -55,15 +55,15 @@ public static void decodeIndex(ArrayList<Integer> Arraylist) {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("would you like to encode or decode a word?\nPress 1 or 2");
+        System.out.println("would you like to encrypt or decrypt a word?\nPress 1 or 2");
         String userChoice = scanner.nextLine();
 
         if (userChoice.equals("1")) {
-            System.out.println("please input word you wish to encode");
+            System.out.println("please input word you wish to encrypt");
             String userInputEncoder = scanner.nextLine();
             System.out.println(ceasarCharacterEncoder(encodeCharacter(userInputEncoder)));
         } else if (userChoice.equals("2")) {
-            System.out.println("please input encoded word");
+            System.out.println("please input encrypted word");
             String userInputDecoder = scanner.nextLine();
             System.out.println(ceasarCharacterDecoder(encodeCharacter(userInputDecoder)));
         }

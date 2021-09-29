@@ -12,10 +12,6 @@ public class Number_code {
         String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
         for (int i = 0; i < wordFromUserToEncode.length() ; i++) {
-            // 1. Først tager vi ordet word "meme som scanner"
-            // 2. Derefter finder vi ud af hvilket bogstav er på index 0, her er det "m"
-            // 3. Derefter tager vi index af "m", hvilket er 12
-            // 4. Derefter bliver index 12 tilføjet til characters Arraylist
             numbers.add(alfabet.indexOf(wordFromUserToEncode.charAt(i)));
         }
         return(numbers);
@@ -61,8 +57,5 @@ public class Number_code {
         }else if (userChoice == 2) {
             numbersToLetters(numberArray());
         }
-
-
-
     }
 }
