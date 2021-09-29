@@ -8,10 +8,6 @@ public class Ceasar_code {
         String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
         for (int i = 0; i < word.length() ; i++) {
-            // 1. Først tager vi ordet word "meme som input"
-            // 2. Derefter finder vi ud af hvilket bogstav er på index 0, her er det "m"
-            // 3. Derefter tager vi index af "m", hvilket er 12
-            // 4. Derefter bliver index 12 tilføjet til characters Arraylist
             characters.add(alfabet.indexOf(word.charAt(i)));
         }
         return(characters);
@@ -21,9 +17,6 @@ public static void decodeIndex(ArrayList<Integer> Arraylist) {
     String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
     for (int i = 0; i < Arraylist.size(); i++) {
-        // 1. Først tager vi det 0'de index af Arraylist, som er 12
-        // 2. Derefter siger vi hvad er det 12'de index af alfabet
-        // 3. Derefter bliver der printet til terminalen
         System.out.print(alfabet.charAt(Arraylist.get(i)));
     }
 }
