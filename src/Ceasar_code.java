@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class encoding {
+public class Ceasar_code {
     // encoding
     public static ArrayList<Integer> encodeCharacter(String word) {
         ArrayList<Integer> characters = new ArrayList<>();
@@ -72,12 +72,8 @@ public static void decodeIndex(ArrayList<Integer> Arraylist) {
         } else if (userChoice.equals("2")) {
             System.out.println("please input encoded word");
             String userInputDecoder = scanner.nextLine();
-            // prøv og brug join her er link https://stackoverflow.com/questions/599161/best-way-to-convert-an-arraylist-to-a-string
-            // prøv toString
             System.out.println(ceasarCharacterDecoder(encodeCharacter(userInputDecoder)));
         }
-        //System.out.println(encodeCharacter("meme")); // Done
-        //decodeIndex(encodeCharacter("meme"));
 
 
     }
