@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ceasar_code {
     // encryption
     // takes a word and convert it to a number arraylist with equivalent numbers in alfabet
-    public static ArrayList<Integer> encodeCharacter(String word) {
+    public static ArrayList<Integer> encryptWordToNumberlist(String word) {
         ArrayList<Integer> numbersArraylist = new ArrayList<>();
         String alfabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -14,7 +14,7 @@ public class Ceasar_code {
         return(numbersArraylist);
     }
     // Takes number arraylist from encodeCharacter and encrypts to cesar code in arraylist
-    public static ArrayList<Character> ceasarCharacterEncoder(ArrayList<Integer> IndexArraylist) {
+    public static ArrayList<Character> ceasarCharacterEncryption(ArrayList<Integer> IndexArraylist) {
         ArrayList<Integer> ceasarLetterIndexNumbers = new ArrayList<>();
         ArrayList<Character> FromIndexNumbersToLetters= new ArrayList<>();
         String alfabet = "abcdefghijklmnopqrstuvwxyz";
@@ -31,7 +31,7 @@ public class Ceasar_code {
         }
 
     // Takes number arraylist from encodeCharacter and decrypts it to an arraylist with letters
-        public static ArrayList<Character> ceasarCharacterDecoder(ArrayList<Integer> Arraylist) {
+        public static ArrayList<Character> ceasarCharacterDecryption(ArrayList<Integer> Arraylist) {
             ArrayList<Integer> ceasarLetterIndexNumbers = new ArrayList<>();
             ArrayList<Character> FromIndexNumbersToLetters = new ArrayList<>();
             String alfabet = "abcdefghijklmnopqrstuvwxyz";
@@ -56,12 +56,12 @@ public class Ceasar_code {
 
         if (userChoice.equals("1")) {
             System.out.println("please input word you wish to encrypt");
-            String userInputEncoder = scanner.nextLine();
-            System.out.println(ceasarCharacterEncoder(encodeCharacter(userInputEncoder)));
+            String userInput = scanner.nextLine();
+            System.out.println(ceasarCharacterEncryption(encryptWordToNumberlist(userInput)));
         } else if (userChoice.equals("2")) {
             System.out.println("please input encrypted word");
-            String userInputDecoder = scanner.nextLine();
-            System.out.println(ceasarCharacterDecoder(encodeCharacter(userInputDecoder)));
+            String userInput = scanner.nextLine();
+            System.out.println(ceasarCharacterDecryption(encryptWordToNumberlist(userInput)));
         }
 
 
