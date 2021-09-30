@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Number_code {
-    // encoding
+    // encryption
+    // takes a word and convert it to an arraylist with equivalent numbers in alfabet
     public static ArrayList<Integer> encodeCharacter() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("please write the word you would like to encrypt");
@@ -16,7 +17,8 @@ public class Number_code {
         }
         return(numbers);
     }
-
+    //decryption
+    //takes numbers and converts them into letters in an arraylist
     public static void numbersToLetters(int[] numbers) {
 
         ArrayList<Character> letters = new ArrayList<>();
@@ -29,7 +31,7 @@ public class Number_code {
         }
         System.out.println(letters);
     }
-
+// sets array to specific length and puts them into an array
     public static int[] numberArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("how many letters is the word?");
@@ -47,7 +49,8 @@ public class Number_code {
     }
 
 
-
+// main
+    // here the user choose to decrypt or encrypt and initiates choice with methods
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("would you like to encrypt or decrypt a word? 1 for encrypt, 2 for decrypt");
