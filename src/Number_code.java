@@ -31,7 +31,8 @@ public class Number_code {
         }
         System.out.println(letters);
     }
-// sets array to specific length and puts them into an array
+    // sets array to specific length and puts them into an array
+    // Har fået inspiration fra denne hjemmeside https://stackoverflow.com/questions/2795350/how-to-put-a-scanner-input-into-an-array-for-example-a-couple-of-numbers
     public static int[] numberArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("how many letters is the word?");
